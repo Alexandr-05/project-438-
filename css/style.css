@@ -1,0 +1,30 @@
+html {
+  background-color: rgb(181, 181, 159);
+}
+
+.info-header {
+  background-color: darkorange;
+  height: 240px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  background-color: rgb(162, 198, 31);
+  width: 190px;
+  height: 200px;
+  padding: 20px;
+  /* background: url(#) no-repeat */
+}
+
+.slider {
+  background-color: darksalmon;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 240px;
+  z-index: 50;
+
+  /* background: url(images/templatemo_slider_frame.png) */
+
+}
