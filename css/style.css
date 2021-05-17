@@ -1,5 +1,62 @@
 /***********************ОБЩИЕ НАЧАЛО***********************/
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+} */
 
+/* :before,
+:after {
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: rgb(201, 124, 69)
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a {
+  color: rgb(25, 25, 26);
+  text-decoration: none;
+  transition: all 3s ease;
+}
+
+a:hover {
+  color: brown;
+}
+
+p+a:not(.btn) {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+  font-weight: 300;
+  color: rgb(22, 22, 22);
+}
 
 /***********************ОБЩИЕ КОНЕЦ************************/
 
@@ -10,6 +67,22 @@
 
 
 /***********************секция BANER начало***********************/
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
 /***********************секция BANER конец*************************/
 
 
@@ -40,6 +113,22 @@
 
 
 /***********************МЕДИА ЗАПРОС начало***********************/
+@media (min-width: 992px) {
+  h1 {
+    font-size: 44px;
+  }
 
+  h2 {
+    font-size: 33px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
 
 /***********************МЕДИА ЗАПРОС конец*************************/
