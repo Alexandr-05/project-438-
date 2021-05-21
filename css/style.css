@@ -2,6 +2,9 @@
 
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
 
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -10,6 +13,9 @@ body {
   background-color: rgb(235, 216, 163)
 }
 
+main {
+  flex: 1;
+}
 
 .container {
   max-width: 70%;
@@ -203,6 +209,42 @@ h6 {
 
 
 /***********************FOOTER НАЧАЛО***********************/
+.footer-row {
+  display: flex;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.footer-copiright {
+  opacity: 60%;
+  margin-top: 15px;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.footer-social li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.footer-social a {
+  opacity: 60%;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+}
+
+/* .footer-social img {
+  max-width: 30%;
+} */
+
+
 /***********************FOOTER КОНЕЦ*************************/
 
 
@@ -374,6 +416,14 @@ h6 {
     width: 40px;
     height: 20px;
   }
+}
+
+
+
+/* footer */
+.footer-copiright {
+  font-size: 7px;
+  align-items: center;
 }
 
 /***********************МЕДИА ЗАПРОС конец*************************/
