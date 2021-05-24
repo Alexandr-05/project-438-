@@ -82,6 +82,10 @@ img {
   max-width: 100%;
 }
 
+.section-padding h2 {
+  padding-top: 20px;
+}
+
 
 /* HEADER ******************************************************/
 
@@ -230,7 +234,7 @@ img {
   text-align: center;
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: 50px;
+  margin-top: 30px;
 
 
 }
@@ -270,6 +274,31 @@ img {
   line-height: 1.7;
 }
 
+
+/* ADVATTEGE */
+
+.advantag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+
+}
+
+/* .advantage-col {
+  width: 33.3%;
+} */
+
+
+/* .advantege-col {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px; */
 
 
 /* MEDYA ***************************************************/
@@ -325,9 +354,11 @@ img {
   font-size: 10px;
   color: #808080;
   font-weight: 300;
-
 }
 
+.advantage-col {
+  width: 100%;
+}
 
 
 
@@ -350,6 +381,10 @@ img {
 
   .baner p {
     font-size: 14px;
+  }
+
+  .advantage-col {
+    width: 33.3%;
   }
 }
 
@@ -377,6 +412,10 @@ img {
     max-width: calc(100% / 3);
     width: 100%;
     margin-bottom: 0;
+  }
+
+  .advantage-col {
+    width: 33.3%;
   }
 
 }
