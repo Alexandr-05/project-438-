@@ -82,7 +82,14 @@ img {
   max-width: 100%;
 }
 
-.section-padding h2 {
+/* .section-padding h2 {
+  padding-top: 20px;
+} */
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
   padding-top: 20px;
 }
 
@@ -217,16 +224,12 @@ img {
 
 /* SERVICES *****************************************************/
 
-.section-padding .container {
+.section-padding {
   background-color: #c2ac7d;
 }
 
 
-.section-padding h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  align-items: center;
-}
+
 
 .services {
   display: flex;
@@ -278,13 +281,10 @@ img {
 
 /* ADVATTEGE */
 
-.section-advantage .container {
+.section-advantage {
   background-color: #c2a870;
 }
 
-/* .section-advantage {
-  background-color: #c2a870;
-} */
 
 .section-advantage p {
   color: #000000;
@@ -293,7 +293,7 @@ img {
 .advantage {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   text-align: center;
   margin-left: -15px;
   margin-right: -15px;
@@ -304,11 +304,18 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #AD8F4F;
+  border: 1px solid #ececec;
+  border-radius: 6px;
 }
 
 .advantage img:hover {
   transform: scale(1.2)
 }
+
+
 
 
 
@@ -374,7 +381,11 @@ img {
 }
 
 .advantage img {
-  width: 100px;
+  width: 50px;
+}
+
+.advantage p {
+  font-size: 10px;
 }
 
 
@@ -402,12 +413,20 @@ img {
 
   .advantage {
 
-    padding-top: 70px;
+    /* padding-top: 30px; */
     padding-bottom: 70px;
   }
 
   .advantage-col {
     width: 33.3%;
+  }
+
+  .advantage img {
+    width: 100px;
+  }
+
+  .advantage p {
+    font-size: 14px;
   }
 }
 
@@ -416,6 +435,7 @@ img {
 
   h1 {
     font-size: 44px;
+    margin-top: 50px;
   }
 
   h2 {
@@ -432,7 +452,7 @@ img {
 
   .advantage {
 
-    padding-top: 70px;
+    /* padding-top: 30px; */
     padding-bottom: 70px;
   }
 
@@ -446,6 +466,13 @@ img {
     width: 33.3%;
   }
 
+  .advantage img {
+    width: 100px;
+  }
+
+  .advantage p {
+    font-size: 14px;
+  }
 
 }
 
