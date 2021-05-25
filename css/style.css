@@ -1,5 +1,7 @@
 /*ОБЩИЕ********************************************************/
 
+
+
 .container {
   max-width: 1280px;
   width: 100%;
@@ -21,10 +23,13 @@ body {
   min-height: 100vh;
 }
 
+
 html,
 body {
   overflow-x: hidden;
 }
+
+
 
 main {
   flex: 1;
@@ -73,7 +78,7 @@ h5,
 h6 {
   line-height: 1.25;
   font-weight: 300;
-  color: #252525;
+  color: rgb(216, 139, 25);
   font-family: 'Pattaya', sans-serif;
 
 }
@@ -93,18 +98,34 @@ h2 {
   padding-top: 20px;
 }
 
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /* HEADER ******************************************************/
 
+
+
 .navbar {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
+  /* margin-bottom: 20px; */
   left: 0;
   top: 0;
   width: 100%;
   height: 66px;
   align-items: center;
+  position: fixed;
   z-index: 2;
+  height: 80px;
+  background-color: #026873;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(90deg, #192129, #303641, #484e57);
+  background-size: 8px 8px,
+    100%;
+
 }
 
 .navbar>.container {
@@ -112,6 +133,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 
 }
 
@@ -126,6 +148,7 @@ h2 {
 
 .main-menu {
   margin-left: auto;
+  padding-right: 20px;
 }
 
 .main-menu ul {
@@ -141,7 +164,7 @@ h2 {
 }
 
 .main-menu li a {
-  color: rgb(245, 240, 240);
+  color: rgb(216, 139, 25);
   text-transform: uppercase;
   font-size: 14px;
   opacity: 60%;
@@ -159,6 +182,12 @@ h2 {
 
 
 /* BANER ********************************************************/
+
+/* section {
+  padding: 25 0;
+  box-shadow: 0 0 10 rgb(202, 22, 22);
+} */
+
 .baner {
   position: relative;
   display: flex;
@@ -169,6 +198,8 @@ h2 {
   text-align: center;
   background-size: cover;
   background-position: center;
+  /* width: 500px; */
+
 }
 
 .hero:before {
@@ -187,14 +218,14 @@ h2 {
 
 .baner h1 {
   margin: bottom 24px;
-  color: rgb(243, 179, 83);
+  color: rgb(216, 139, 25);
 }
 
 .baner p {
   margin-bottom: 35px;
   font-weight: 300;
   opacity: 80%;
-  color: white;
+  color: rgb(3, 3, 3);
   font-size: 16px;
 }
 
@@ -225,7 +256,11 @@ h2 {
 /* SERVICES *****************************************************/
 
 .section-padding {
-  background-color: #c2ac7d;
+  background-color: #026873;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(90deg, #192129, #303641, #484e57);
+  background-size: 8px 8px,
+    100%;
 }
 
 
@@ -256,7 +291,8 @@ h2 {
   padding: 25px;
   border: 1px solid #ececec;
   border-radius: 6px;
-  background-color: #ad8f4f;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   margin-bottom: 30px;
 }
 
@@ -282,7 +318,11 @@ h2 {
 /* ADVATTEGE */
 
 .section-advantage {
-  background-color: #c2a870;
+  background-color: #026873;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(90deg, #192129, #303641, #484e57);
+  background-size: 8px 8px, 100%;
+
 }
 
 
@@ -306,7 +346,8 @@ h2 {
   padding: 20px;
   margin-right: 10px;
   margin-left: 10px;
-  background-color: #AD8F4F;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   border: 1px solid #ececec;
   border-radius: 6px;
 }
@@ -314,6 +355,32 @@ h2 {
 .advantage img:hover {
   transform: scale(1.2)
 }
+
+
+/* INFORMATION */
+
+.section-information {
+  background-color: rgb(216, 139, 25);
+}
+
+.information {
+  padding-top: 20px;
+}
+
+.section-information p {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.section-information img {
+  padding-top: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+
+
+
 
 
 
@@ -327,14 +394,15 @@ h2 {
     max-width: 100%;
     width: 100%;
     text-align: center;
-    padding-top: 25px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+
   }
 
   .logo img {
     max-width: 130px;
   }
+
 
   .main-menu {
     margin: auto;
@@ -431,6 +499,8 @@ h2 {
 }
 
 @media (min-width:992px) {
+
+
 
 
   h1 {
