@@ -18,6 +18,7 @@ body {
 
 
 
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -110,8 +111,8 @@ h3 {
 
 .navbar {
   display: flex;
-  /* position: absolute; */
-  /* margin-bottom: 20px; */
+  position: absolute;
+  margin-bottom: 0;
   left: 0;
   top: 0;
   width: 100%;
@@ -120,12 +121,14 @@ h3 {
   position: fixed;
   z-index: 2;
   height: 80px;
-  background-color: #026873;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px,
-    100%;
 
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  border: 1px solid #ececec;
+  background: linear-gradient(3deg, #e6d16c, #16014c);
+
+  border-radius: 6px;
+  opacity: 0.9;
 }
 
 .navbar>.container {
@@ -148,7 +151,7 @@ h3 {
 
 .main-menu {
   margin-left: auto;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 .main-menu ul {
@@ -164,9 +167,10 @@ h3 {
 }
 
 .main-menu li a {
-  color: rgb(216, 139, 25);
+  color: rgb(253, 242, 242);
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
   opacity: 60%;
   letter-spacing: 0.5px;
   transition: opacity 0.3s ease;
@@ -181,7 +185,7 @@ h3 {
 
 
 
-/* BANER ********************************************************/
+/* BANER*****************************************************************/
 
 /* section {
   padding: 25 0;
@@ -193,12 +197,13 @@ h3 {
   display: flex;
   align-items: center;
   min-width: 70vh;
-  padding-top: 80px;
+  min-height: 60vh;
+  margin-top: 80px;
   padding-bottom: 80px;
   text-align: center;
   background-size: cover;
   background-position: center;
-  /* width: 500px; */
+
 
 }
 
@@ -225,7 +230,7 @@ h3 {
   margin-bottom: 35px;
   font-weight: 300;
   opacity: 80%;
-  color: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
@@ -297,7 +302,6 @@ h3 {
 }
 
 .services img {
-  opacity: 60%;
   max-width: 70px;
   margin-bottom: 24px;
 }
@@ -315,7 +319,7 @@ h3 {
 }
 
 
-/* ADVATTEGE */
+/* ADVATTEGE ***********************************************************/
 
 .section-advantage {
   background-color: #026873;
@@ -344,8 +348,8 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
   background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   border: 1px solid #ececec;
@@ -360,7 +364,7 @@ h3 {
 /* INFORMATION */
 
 .section-information {
-  background-color: rgb(216, 139, 25);
+  background-color: rgb(241, 188, 109)
 }
 
 .information {
@@ -368,6 +372,7 @@ h3 {
 }
 
 .section-information p {
+  padding-bottom: 20px;
   text-align: center;
   font-family: 'Comfortaa', cursive;
 }
@@ -378,12 +383,113 @@ h3 {
   width: 100%;
 }
 
+/* SLIDER */
+.slider {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
 
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border: none !important;
+  box-shadow: none !important;
+}
 
+/* Кнопки вперед и назад */
+.slider .prev,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+/* Заголовок слайда */
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
 
+/* Кружочки */
+.slider-dots {
+  text-align: center;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: #aaa;
+}
+
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
 
 
 
@@ -543,6 +649,8 @@ h3 {
   .advantage p {
     font-size: 14px;
   }
+
+
 
 }
 
