@@ -1,6 +1,4 @@
-/*ОБЩИЕ********************************************************/
-
-
+/* ОБЩИЕ СТИЛИ начало **************************************************************************************************************************************************/
 
 .container {
   max-width: 1280px;
@@ -16,21 +14,15 @@ body {
   line-height: 1.6;
   background-color: rgb(243, 238, 227);
 
-
-
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-
 html,
 body {
   overflow-x: hidden;
 }
-
-
 
 main {
   flex: 1;
@@ -88,9 +80,6 @@ img {
   max-width: 100%;
 }
 
-/* .section-padding h2 {
-  padding-top: 20px;
-} */
 
 h2 {
   text-align: center;
@@ -104,10 +93,9 @@ h3 {
   margin-top: 20px;
 }
 
+/* ОБЩИЕ СТИЛИ конец ***************************************************************************************************************************************************/
 
-/* HEADER ******************************************************/
-
-
+/* HEADER начало *******************************************************************************************************************************************************/
 
 .navbar {
   display: flex;
@@ -136,8 +124,6 @@ h3 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
-
 }
 
 .logo:hover {
@@ -146,7 +132,6 @@ h3 {
 
 .logo img {
   max-width: 160px;
-
 }
 
 .main-menu {
@@ -174,19 +159,17 @@ h3 {
   opacity: 60%;
   letter-spacing: 0.5px;
   transition: opacity 0.3s ease;
-
 }
 
 .main-menu li a:hover {
   color: white;
   opacity: 1;
-
 }
 
+/* HEADER конец ********************************************************************************************************************************************************/
 
 
-/* BANER*****************************************************************/
-
+/* BANER начало ********************************************************************************************************************************************************/
 /* section {
   padding: 25 0;
   box-shadow: 0 0 10 rgb(202, 22, 22);
@@ -196,15 +179,15 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
-  min-width: 70vh;
+  min-width: 45vh;
   min-height: 60vh;
   margin-top: 80px;
   padding-bottom: 80px;
   text-align: center;
   background-size: cover;
   background-position: center;
-
-
+  border: 2px solid #fd6702;
+  border-radius: 10px;
 }
 
 .hero:before {
@@ -257,19 +240,18 @@ h3 {
   transform: translate3d(0, -2px, 0);
 }
 
+/* HEADER конец ********************************************************************************************************************************************************/
 
-/* SERVICES *****************************************************/
+/* SERVICES начало *****************************************************************************************************************************************************/
 
 .section-padding {
   background-color: #026873;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px,
-    100%;
+  background-size: 8px 8px, 100%;
+  border: 1px solid #fd6702;
+  border-radius: 10px;
 }
-
-
-
 
 .services {
   display: flex;
@@ -279,8 +261,6 @@ h3 {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 30px;
-
-
 }
 
 .service-col {
@@ -289,7 +269,6 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 30px;
-
 }
 
 .service {
@@ -318,17 +297,18 @@ h3 {
   line-height: 1.7;
 }
 
+/* SERVICES конец ******************************************************************************************************************************************************/
 
-/* ADVATTEGE ***********************************************************/
+/* ADVATTEGE начало ****************************************************************************************************************************************************/
 
 .section-advantage {
   background-color: #026873;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, #192129, #303641, #484e57);
   background-size: 8px 8px, 100%;
-
+  border: 1px solid #fd6702;
+  border-radius: 10px;
 }
-
 
 .section-advantage p {
   color: #000000;
@@ -341,7 +321,6 @@ h3 {
   text-align: center;
   margin-left: -15px;
   margin-right: -15px;
-
 }
 
 .advantage-col {
@@ -360,111 +339,65 @@ h3 {
   transform: scale(1.2)
 }
 
+/* ADVATTEGE конец *****************************************************************************************************************************************************/
 
-/* INFORMATION */
+/* SLIDER начало *******************************************************************************************************************************************************/
 
-.section-information {
-  background-color: rgb(241, 188, 109)
+.section-slider {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
-.information {
-  padding-top: 20px;
+.showSlide {
+  display: none
 }
 
-.section-information p {
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: 'Comfortaa', cursive;
-}
-
-.section-information img {
-  padding-top: 20px;
-  margin: auto;
+.showSlide img {
   width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 20px;
+
 }
 
-/* SLIDER */
-.slider {
-  max-width: 90%;
+.slider-container {
+  max-width: 1280px;
   position: relative;
   margin: auto;
-  height: 300px;
-  margin-bottom: 15px;
 }
 
-/* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Кнопки вперед и назад */
-.slider .prev,
-.slider .next {
+.left,
+.right {
   cursor: pointer;
   position: absolute;
-  top: 0;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
+  margin-top: -22px;
+  color: rgb(255, 139, 6);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
 
-.slider .next {
+.right {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* При наведении на кнопки добавляем фон кнопок */
-.slider .prev:hover,
-.slider .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.left:hover,
+.right:hover {
+  background-color: rgba(115, 115, 115, 0.8);
 }
 
-/* Заголовок слайда */
-.slideText {
-  position: absolute;
-  color: #fff;
-  font-size: 35px;
-  /* Выравнивание текста по горизонтали и по вертикали*/
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* Тень*/
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+.active {
+  background-color: #717171;
 }
 
-/* Кружочки */
-.slider-dots {
-  text-align: center;
-}
-
-.slider-dots_item {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.slider-dots_item:hover {
-  background-color: #aaa;
-}
-
-/* Анимация слайдов */
-.slider .item {
+/* Fading animation */
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -491,9 +424,86 @@ h3 {
   }
 }
 
+/* SLIDER конец ********************************************************************************************************************************************************/
+
+/* INFORMATION начало **************************************************************************************************************************************************/
+
+.section-information {
+  background-color: rgb(241, 188, 109);
+  border: 2px solid #fd6702;
+  border-radius: 10px;
+}
+
+.information {
+  padding-top: 20px;
+}
+
+.section-information p {
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+
+.section-information img {
+  padding-top: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+/* INFORMATION конец ***************************************************************************************************************************************************/
+
+/* FOOTER начало *******************************************************************************************************************************************************/
+
+footer {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  border: 1px solid #ececec;
+  background: linear-gradient(3deg, #e6d16c, #16014c);
+}
 
 
-/* MEDYA ***************************************************/
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-copiright {
+  opacity: 60%;
+  color: #eb510a;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+span {
+  color: #eb510a;
+}
+
+.footer-social li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.footer-social a {
+  opacity: 60%;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+}
+
+.footer-social img {
+  max-width: 18px;
+}
+
+/* FOOTER конец ********************************************************************************************************************************************************/
+
+/* MEDYA начало ********************************************************************************************************************************************************/
 
 @media (max-width: 768px) {
   .logo {
@@ -502,13 +512,11 @@ h3 {
     text-align: center;
     padding-top: 10px;
     margin-top: 20px;
-
   }
 
   .logo img {
     max-width: 130px;
   }
-
 
   .main-menu {
     margin: auto;
@@ -563,7 +571,6 @@ h3 {
 }
 
 
-
 @media (min-width: 768px) and (max-width:992px) {
 
   .service-col {
@@ -586,7 +593,6 @@ h3 {
   }
 
   .advantage {
-
     /* padding-top: 30px; */
     padding-bottom: 70px;
   }
@@ -602,12 +608,10 @@ h3 {
   .advantage p {
     font-size: 14px;
   }
+
 }
 
 @media (min-width:992px) {
-
-
-
 
   h1 {
     font-size: 44px;
@@ -650,85 +654,4 @@ h3 {
     font-size: 14px;
   }
 
-
-
-}
-
-/* .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  border-radius: 6px;
-  padding: 5px 35px;
-  transition: 0.1s linear;
-}
-
-.btn-styles {
-  background-color: #4a90e2;
-  color: #fff;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.btn-styles:hover {
-  background-color: #609de6;
-  transform: translate3d(0, -2px, 0);
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER *******************************************************/
-footer {
-  background-color: #a19994;
-}
-
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.footer-copiright {
-  opacity: 60%;
-  color: #eb510a;
-}
-
-.footer-social {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-span {
-  color: #eb510a;
-}
-
-.footer-social li {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.footer-social a {
-  opacity: 60%;
-}
-
-.footer-social a:hover {
-  opacity: 1;
-}
-
-.footer-social img {
-  max-width: 18px;
 }
