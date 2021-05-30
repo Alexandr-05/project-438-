@@ -1,0 +1,51 @@
+.gallery_inline {
+  padding-top: 22px;
+}
+
+.gal_img {
+  width: 338px;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.gal_img p {
+  padding: 10px 40px 0px 6px;
+}
+
+.gal_img_bg {
+  background: url(images/img_bg.png) no-repeat top left;
+  height: 200px;
+  padding: 6px;
+}
+
+
+#wrap {
+  position: relative;
+  width: 1285px;
+  margin: 0 auto;
+  background: url(images/bg_left.png) repeat-y left;
+}
+
+.wrap_left {
+  width: 258px;
+  float: left;
+}
+
+#news_box {
+  padding: 0px 10px;
+}
+
+.news {
+  padding: 10px 0px 0px 0px;
+}
+
+.wrap_left img {
+  float: left;
+  padding-right: 10px;
+}
+
+.wrap_right {
+  width: 1017px;
+  float: right;
+
+}
