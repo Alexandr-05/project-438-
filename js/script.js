@@ -38,43 +38,40 @@
 //     dots[slideIndex - 1].className += " active";
 // }
 
+let slide_index = 1;
+displaySlides(slide_index);
 
+function nextSlide(n) {
+    displaySlides(slide_index += n);
+}
 
+function currentSlide(n) {
+    displaySlides(slide_index = n);
+}
 
+function displaySlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("showSlide");
+    if (n > slides.length) {
+        slide_index = 1
+    }
+    if (n < 1) {
+        slide_index = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slide_index - 1].style.display = "block";
+}
 
-
-
-
-
-
-var slide_index = 1;
-            displaySlides(slide_index);
-
-            function nextSlide(n) {
-                displaySlides(slide_index += n);
-            }
-
-            function currentSlide(n) {
-                displaySlides(slide_index = n);
-            }
-
-            function displaySlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("showSlide");
-                if (n > slides.length) { slide_index = 1 }
-                if (n < 1) { slide_index = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slide_index - 1].style.display = "block";
-            }
-
-
-           $(document). ready (function (){
-               $ ("#menu"). on ("click", "a", function (event) {
-                   event.preventDefault();
-                   let id = $(this) .attr("href"), 
-                   top = $(id) .offset() .top;
-                   $ ("body, html") .animate ({scrollTop: top}, 1500);
-               });
-           });
+// Плавный скролинг страницы
+$(document).ready(function () {
+    $("#menu").on("click", "a", function (event) {
+        event.preventDefault();
+        let id = $(this).attr("href"),
+            top = $(id).offset().top;
+        $("body, html").animate({
+            scrollTop: top
+        }, 1500);
+    });
+});
