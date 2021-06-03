@@ -21,7 +21,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  /* font-size: 15px; */
   line-height: 1.6;
   background-color: rgb(243, 238, 227);
 
@@ -250,9 +250,10 @@ p {
 
 .section-advantage {
 
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
+  /* background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, #192129, #303641, #484e57);
   background-size: 8px 8px, 100%;
+} */
 }
 
 .advantage {
@@ -293,11 +294,11 @@ p {
 }
 
 
-.section-padding {
+/* .section-padding {
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, #192129, #303641, #484e57);
   background-size: 8px 8px, 100%;
-}
+} */
 
 .section-padding p {
   text-align: center;
@@ -359,12 +360,12 @@ p {
 
 /* SLIDER начало *******************************************************************************************************************************************************/
 
-.section-slider {
+/* .section-slider {
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(90deg, #192129, #303641, #484e57);
   background-size: 8px 8px,
     100%;
-}
+} */
 
 /* .showSlide {
   display: none;
@@ -641,6 +642,11 @@ span {
     margin-left: 20px;
   }
 
+  .videoOne {
+    margin-left: 15px;
+
+  }
+
 }
 
 @media (min-width:992px) {
@@ -694,10 +700,13 @@ span {
     font-size: 14px;
   }
 
+
   .video {
     width: 30%;
     display: inline-block;
     margin: 20px 10px;
+
+
   }
 
   .videoOne {
