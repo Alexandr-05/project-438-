@@ -199,7 +199,7 @@ span {
 
 @media(min-width: 992px) {
   .container-gallery p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -252,7 +252,7 @@ span {
   }
 }
 
-@media (max-width : 479px) {
+@media (max-width : 480px) {
 
   .main-menu ul {
     margin-top: 0;
