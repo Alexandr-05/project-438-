@@ -28,7 +28,7 @@ main {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -134,6 +134,7 @@ h3 {
   float: left;
   font: 10px/1.5 Verdana, Helvetica, Sans-serif;
   width: 16%;
+  height: auto;
   margin: 2% 2% 40px 2%;
 }
 
@@ -210,7 +211,7 @@ span {
   }
 
   .container-gallery p {
-    font-size: 14px;
+    font-size: 11px;
   }
 
 }
