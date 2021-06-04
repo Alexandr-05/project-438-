@@ -252,7 +252,7 @@ span {
   }
 }
 
-@media (max-width : 479px) {
+@media (max-width : 480px) {
 
   .main-menu ul {
     margin-top: 0;
