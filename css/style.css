@@ -218,7 +218,7 @@ p {
   font-weight: 300;
   opacity: 80%;
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .btn {
@@ -339,13 +339,14 @@ p {
 }
 
 .services img {
-  max-width: 70px;
+  /* max-width: 1px; */
   margin-bottom: 24px;
 }
 
 .service h4 {
   font-weight: 400;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .service p {
@@ -459,24 +460,33 @@ p {
 }
 
 .information {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .section-information h3 {
   color: #341d4a;
+  margin-bottom: 1rem;
 }
 
 .section-information p {
+  text-indent: 2rem;
   font-size: 12px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: justify;
+  /* text-align: center; */
   /* font-family: 'Comfortaa', cursive; */
 }
 
+.section-information p::first-letter {
+  font-size: 1.5rem;
+
+}
+
 .section-information img {
-  padding-top: 20px;
   margin: auto;
+  margin-top: 10px;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* INFORMATION конец ***************************************************************************************************************************************************/
@@ -657,7 +667,7 @@ span {
 @media (min-width:992px) {
 
   h1 {
-    font-size: 44px;
+    font-size: 48px;
     margin-top: 50px;
   }
 
