@@ -1,8 +1,4 @@
 /* ОБЩИЕ СТИЛИ начало **************************************************************************************************************************************************/
-/* html,
-body {
-  overflow-x: hidden;
-} */
 
 body {
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
@@ -21,7 +17,6 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  /* font-size: 15px; */
   line-height: 1.6;
   background-color: rgb(243, 238, 227);
 
@@ -29,10 +24,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* main {
-  flex: 1;
-} */
 
 *,
 h1,
@@ -65,7 +56,7 @@ a:not(.btn):hover {
 }
 
 p+a:not(.btn) {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -86,7 +77,6 @@ img {
   max-width: 100%;
 }
 
-
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -100,7 +90,7 @@ h3 {
 }
 
 p {
-  color: rgb(2, 2, 2);
+  color: rgb(255, 255, 255);
   font-family: 'Comfortaa', cursive;
 }
 
@@ -119,10 +109,6 @@ p {
   position: fixed;
   z-index: 1;
   height: 70px;
-
-  /* background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-  border: 1px solid #ececec; */
   background: linear-gradient(3deg, #e6d16c, #16014c);
   border-radius: 6px;
   opacity: 0.9;
@@ -145,7 +131,6 @@ p {
 
 .main-menu {
   margin-left: auto;
-
 }
 
 .main-menu ul {
@@ -191,7 +176,6 @@ p {
   text-align: center;
   background-size: cover;
   background-position: center;
-
 }
 
 .hero:before {
@@ -248,14 +232,6 @@ p {
 
 /* ADVATTEGE начало ****************************************************************************************************************************************************/
 
-/* .section-advantage {
-
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px, 100%;
-}
-} */
-
 .advantage {
   display: flex;
   align-items: center;
@@ -265,20 +241,36 @@ p {
   margin-right: -15px;
 }
 
+.section-advantage h2 {
+  font-size: 22px;
+}
+
 .advantage-col {
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
-  padding: 20px;
+  /* padding: 20px; */
   margin-right: 6px;
   margin-left: 6px;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-  border: 1px solid #ececec;
-  border-radius: 6px;
+  height: 260px;
+  /* border: 1px solid #ececec;
+  border-radius: 6px; */
 }
 
 .advantage img:hover {
   transform: scale(1.2)
+}
+
+.advantage p {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.section-advantage .txt {
+  font-size: 9px;
+  /* padding: 5px; */
+  text-align: center;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
 /* ADVATTEGE конец *****************************************************************************************************************************************************/
@@ -288,21 +280,13 @@ p {
 
 .video {
   width: 80%;
-  /* max-width: 1000px; */
   margin: 20px auto;
   display: block;
 }
 
-
-/* .section-padding {
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px, 100%;
-} */
-
 .section-padding p {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -339,7 +323,6 @@ p {
 }
 
 .services img {
-  /* max-width: 1px; */
   margin-bottom: 24px;
 }
 
@@ -356,24 +339,24 @@ p {
   line-height: 1.7;
 }
 
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(226, 153, 17);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(146, 103, 24);
+  transition: all 0.25s;
+}
+
 /* SECTION-PADDING конец ******************************************************************************************************************************************************/
 
 
 /* SLIDER начало *******************************************************************************************************************************************************/
-
-/* .section-slider {
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px,
-    100%;
-} */
-
-/* .showSlide fade {
-  width: 100%;
-  margin: auto;
-} */
-
-
 
 .showSlide img {
   width: 100%;
@@ -479,7 +462,6 @@ p {
 
 .section-information p::first-letter {
   font-size: 1.5rem;
-
 }
 
 .section-information img {
@@ -539,6 +521,29 @@ span {
 
 /* MEDYA начало ********************************************************************************************************************************************************/
 
+@media (min-width: 576px) and (max-width:768px) {
+
+  .section-advantage h2 {
+    font-size: 28px;
+  }
+
+  .advantage-col {
+    height: 220px;
+  }
+
+  .advantage p {
+    font-size: 14px;
+  }
+
+  .section-advantage .txt {
+    font-size: 11px;
+  }
+
+  .section-padding p {
+    font-size: 14px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .logo {
@@ -571,12 +576,6 @@ span {
     font-size: 25px;
   }
 
-  .btn {
-    width: 25px;
-    height: 20px;
-    font-size: 8px;
-  }
-
   .section-padding h2 {
     font-size: 20px;
   }
@@ -592,17 +591,23 @@ span {
   font-weight: 300;
 }
 
+/* .section-advantage h2 {
+  font-size: 30px;
+} */
+
 
 .advantage-col {
   width: 100%;
+  height: 240px;
 }
+
+/* .section-advantage .txt {
+  padding-left: 20px;
+  padding-right: 20px;
+} */
 
 .advantage img {
   width: 50px;
-}
-
-.advantage p {
-  font-size: 10px;
 }
 
 
@@ -632,8 +637,13 @@ span {
     padding-bottom: 20px;
   }
 
+  .section-advantage h2 {
+    font-size: 30px;
+  }
+
   .advantage-col {
     width: 33.3%;
+    height: 300px;
   }
 
   .advantage img {
@@ -644,8 +654,15 @@ span {
     font-size: 14px;
   }
 
+  .section-advantage .txt {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .section-padding p {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 0;
   }
 
   .video {
@@ -683,15 +700,9 @@ span {
     font-size: 18px;
   }
 
-  .section-padding .text {
+  /* .section-padding .text {
     font-size: 16px;
-  }
-
-  .advantage {
-
-    /* padding-top: 30px; */
-    padding-bottom: 70px;
-  }
+  } */
 
   .service-col {
     max-width: calc(100% / 3);
@@ -701,6 +712,11 @@ span {
 
   .advantage-col {
     width: 33.3%;
+    height: 310px;
+  }
+
+  .section-advantage h2 {
+    font-size: 33px;
   }
 
   .advantage img {
@@ -708,11 +724,19 @@ span {
   }
 
   .advantage p {
+    font-size: 17px;
+  }
+
+  .section-advantage .txt {
     font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    /* margin-top: 40px; */
   }
 
   .section-padding p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
 
@@ -720,8 +744,6 @@ span {
     width: 30%;
     display: inline-block;
     margin: 20px 10px;
-
-
   }
 
   .videoOne {
