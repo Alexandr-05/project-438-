@@ -126,6 +126,7 @@ p {
 
 .logo img {
   max-width: 160px;
+  /* margin-top: 20px; */
 }
 
 .main-menu {
@@ -318,6 +319,7 @@ p {
 }
 
 .service {
+  /* height: 500px; */
   padding: 25px;
   border: 1px solid #ececec;
   border-radius: 6px;
@@ -337,11 +339,11 @@ p {
 }
 
 .service p {
-  max-width: 280px;
+  /* max-width: 280px; */
   margin: 0 auto 30px auto;
   font-size: 13px;
   line-height: 1.7;
-  text-align: justify;
+  text-align: center;
 }
 
 .btn {
@@ -552,6 +554,11 @@ span {
 
 
 @media (max-width: 768px) {
+
+  .navbar {
+    height: 100px;
+  }
+
   .logo {
     max-width: 100%;
     width: 100%;
@@ -567,6 +574,7 @@ span {
   .main-menu {
     margin: auto;
     margin-bottom: 25px;
+    padding-bottom: 20px;
   }
 
   .main-menu li {
@@ -614,6 +622,15 @@ span {
 
 .advantage img {
   width: 50px;
+}
+
+.service {
+  width: 80%;
+  margin: auto;
+}
+
+.service p {
+  font-size: 18px;
 }
 
 
@@ -669,6 +686,15 @@ span {
   .section-padding p {
     font-size: 16px;
     margin-top: 0;
+  }
+
+  .service {
+    width: 100%;
+
+  }
+
+  .service p {
+    font-size: 14px;
   }
 
   .video {
@@ -746,6 +772,14 @@ span {
   }
 
   .section-padding p {
+    font-size: 18px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service p {
     font-size: 18px;
   }
 
