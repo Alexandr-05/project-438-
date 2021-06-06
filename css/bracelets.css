@@ -127,6 +127,10 @@ h3 {
   overflow: hidden;
 }
 
+.gallery .name {
+  font-weight: bold;
+}
+
 .container-gallery p {
   text-align: center;
   margin-top: 10px;
@@ -143,6 +147,7 @@ h3 {
 .container-gallery ul li img {
   max-width: 100%;
 }
+
 
 /* GALLARY конец *********************************************************************************************************************************/
 
@@ -202,12 +207,19 @@ span {
 
 @media(min-width: 992px) {
   .container-gallery p {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+
+  .gallery .name {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 40px;
+    text-align: center;
+
   }
 }
 
-
-/* Media Queries */
 @media (max-width : 992px) {
   .container-gallery ul li {
     width: 29.3%;
