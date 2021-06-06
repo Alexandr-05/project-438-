@@ -59,7 +59,7 @@ h3 {
   background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   border: 1px solid #ececec;
-  background: linear-gradient(3deg, #e6d16c, #16014c);
+  background: linear-gradient(1deg, #7a5c05, #2a2004);
 
   border-radius: 6px;
   opacity: 0.9;
@@ -99,7 +99,7 @@ h3 {
 }
 
 .main-menu li a {
-  color: rgb(253, 242, 242);
+  color: rgb(252, 235, 0);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
@@ -149,7 +149,7 @@ footer {
   background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
   border: 1px solid #ececec;
-  background: linear-gradient(3deg, #e6d16c, #16014c);
+  background: linear-gradient(1deg, #7a5c05, #2a2004);
 }
 
 
@@ -217,6 +217,10 @@ span {
 }
 
 @media (max-width : 768px) {
+
+  .navbar {
+    height: 100px;
+  }
 
   .main-menu ul {
     margin-top: 0;
