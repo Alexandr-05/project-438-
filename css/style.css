@@ -99,10 +99,6 @@ p {
 
 .navbar {
   display: flex;
-  /* position: absolute; */
-  /* margin-bottom: 0;
-  left: 0;
-  top: 0; */
   width: 100%;
   align-items: center;
   position: fixed;
@@ -126,7 +122,6 @@ p {
 
 .logo img {
   max-width: 160px;
-  /* margin-top: 20px; */
 }
 
 .main-menu {
@@ -187,11 +182,6 @@ p {
   opacity: 50%;
 }
 
-/* .baner .container {
-  position: relative;
-  max-width: 800px;
-} */
-
 .baner h1 {
   margin: bottom 24px;
   color: #fda400;
@@ -235,7 +225,6 @@ p {
 .advantage {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
   text-align: center;
   margin-left: -15px;
   margin-right: -15px;
@@ -246,7 +235,6 @@ p {
 }
 
 .advantage-col {
-  /* padding: 20px; */
   margin-right: 6px;
   margin-left: 6px;
   height: 270px;
@@ -273,12 +261,10 @@ p {
 
 .section-advantage .txt {
   font-size: 9px;
-  /* padding: 5px; */
   text-align: center;
   margin-top: 10px;
   color: #ffffff;
   font-family: 'Balsamiq Sans', cursive;
-
 }
 
 /* ADVATTEGE конец *****************************************************************************************************************************************************/
@@ -319,7 +305,6 @@ p {
 }
 
 .service {
-  /* height: 500px; */
   padding: 25px;
   border: 1px solid #ececec;
   border-radius: 6px;
@@ -339,7 +324,6 @@ p {
 }
 
 .service p {
-  /* max-width: 280px; */
   margin: 0 auto 30px auto;
   font-size: 13px;
   line-height: 1.7;
@@ -400,7 +384,6 @@ p {
 
 .right {
   right: 0;
-  /* border-radius: 3px 0 0 3px; */
 }
 
 .left:hover,
@@ -411,7 +394,6 @@ p {
 .active {
   background-color: #717171;
 }
-
 
 .fade {
   -webkit-animation-name: fade;
@@ -463,8 +445,6 @@ p {
   font-size: 12px;
   padding-bottom: 20px;
   text-align: justify;
-  /* text-align: center; */
-  /* font-family: 'Comfortaa', cursive; */
 }
 
 .section-information p::first-letter {
@@ -485,7 +465,6 @@ p {
 footer {
   background: linear-gradient(1deg, #7a5c05, #2a2004);
 }
-
 
 .footer {
   display: flex;
@@ -527,7 +506,6 @@ span {
 /* MEDYA начало ********************************************************************************************************************************************************/
 
 @media (min-width: 576px) and (max-width:768px) {
-
 
   .section-advantage h2 {
     font-size: 28px;
@@ -595,26 +573,10 @@ span {
   }
 }
 
-/* .title {
-  font-size: 10px;
-  color: #808080;
-  font-weight: 300;
-} */
-
-/* .section-advantage h2 {
-  font-size: 30px;
-} */
-
-
 .advantage-col {
   width: 100%;
   height: 250px;
 }
-
-/* .section-advantage .txt {
-  padding-left: 20px;
-  padding-right: 20px;
-} */
 
 .advantage img {
   width: 50px;
@@ -652,7 +614,6 @@ span {
   }
 
   .advantage {
-    /* padding-top: 30px; */
     padding-bottom: 20px;
   }
 
@@ -728,10 +689,6 @@ span {
     font-size: 18px;
   }
 
-  /* .section-padding .text {
-    font-size: 16px;
-  } */
-
   .tagline {
     font-size: 23px;
   }
@@ -764,7 +721,6 @@ span {
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    /* margin-top: 40px; */
   }
 
   .section-padding p {
@@ -778,7 +734,6 @@ span {
   .service p {
     font-size: 18px;
   }
-
 
   .video {
     width: 30%;
