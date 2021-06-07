@@ -9,19 +9,16 @@
 }
 
 body {
-
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
-    linear-gradient(90deg, #192129, #303641, #484e57);
-  background-size: 8px 8px,
-    100%;
-
-  /* font-family: 'Balsamiq Sans', cursive; */
-  line-height: 1.6;
-  background-color: rgb(243, 238, 227);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.6;
+
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(90deg, #192129, #303641, #484e57);
+  background-size: 8px 8px, 100%;
+  background-color: rgb(243, 238, 227);
+
 }
 
 *,
@@ -50,36 +47,22 @@ a {
   transition: all .3s ease;
 }
 
-a:not(.btn):hover {
-  color: #4872a2;
-}
-
-p+a:not(.btn) {
-  font-size: 10px;
-  font-weight: 700;
-}
-
 h1,
 h2,
 h3 {
   line-height: 1.25;
   font-weight: 300;
-  color: rgb(216, 139, 25);
   font-family: 'Pattaya', sans-serif;
+  color: rgb(216, 139, 25);
 }
 
 h4 {
   color: #341d4a;
 }
 
-img {
-  max-width: 100%;
-}
-
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -90,7 +73,10 @@ h3 {
 
 p {
   color: rgb(255, 255, 255);
-  font-family: 'Balsamiq Sans', cursive Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* ОБЩИЕ СТИЛИ конец ***************************************************************************************************************************************************/
@@ -99,29 +85,30 @@ p {
 
 .navbar {
   display: flex;
-  width: 100%;
-  align-items: center;
   position: fixed;
-  z-index: 1;
+  width: 100%;
   height: 70px;
-  background: linear-gradient(1deg, #7a5c05, #2a2004);
+  align-items: center;
+  z-index: 1;
   border-radius: 6px;
   opacity: 0.9;
+  background: linear-gradient(1deg, #7a5c05, #2a2004);
 }
 
 .navbar>.container {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
+  align-items: center;
 
-.logo:hover {
-  transform: scale(1.1);
 }
 
 .logo img {
   max-width: 160px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .main-menu {
@@ -141,18 +128,19 @@ p {
 }
 
 .main-menu li a {
-  color: rgb(252, 235, 0);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  opacity: 60%;
   letter-spacing: 0.5px;
+  font-family: 'Gabriela', serif;
   transition: opacity 0.3s ease;
+
+  color: rgb(252, 235, 0);
 }
 
 .main-menu li a:hover {
-  color: white;
   opacity: 1;
+  color: white;
 }
 
 /* HEADER конец ********************************************************************************************************************************************************/
@@ -161,25 +149,19 @@ p {
 /* BANER начало ********************************************************************************************************************************************************/
 
 .baner {
-  position: relative;
   display: flex;
-  align-items: center;
+  position: relative;
+
   min-width: 45vh;
   min-height: 70vh;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  align-items: center;
   text-align: center;
+
   background-size: cover;
   background-position: center;
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: #252525;
-  opacity: 50%;
 }
 
 .baner h1 {
@@ -189,33 +171,13 @@ p {
 
 .tagline {
   font-size: 12px;
+  font-weight: 300;
+  font-family: 'Gabriela', serif;
+
   margin-top: 10px;
   margin-bottom: 35px;
-  font-weight: 300;
+
   color: rgb(255, 254, 254);
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  border-radius: 6px;
-  padding: 5px 35px;
-  transition: 0.1s linear;
-}
-
-.btn-styles {
-  background-color: #4a90e2;
-  color: #fff;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.btn-styles:hover {
-  background-color: #609de6;
-  transform: translate3d(0, -2px, 0);
 }
 
 /* BANER конец ********************************************************************************************************************************************************/
@@ -224,8 +186,10 @@ p {
 
 .advantage {
   display: flex;
+
   align-items: center;
   text-align: center;
+
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -238,6 +202,7 @@ p {
   margin-right: 6px;
   margin-left: 6px;
   height: 270px;
+
   border: 1px solid #ececec;
   border-radius: 6px;
   box-shadow: 3px 3px 4px 2px white;
@@ -252,19 +217,21 @@ p {
 }
 
 .advantage p {
-  margin-top: 10px;
   text-align: center;
-  width: 100%;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gabriela', serif;
+  width: 100%;
+  line-height: 170%;
+  margin-top: 10px;
 }
 
 .section-advantage .txt {
   font-size: 9px;
   text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
   margin-top: 10px;
+
   color: #ffffff;
-  font-family: 'Balsamiq Sans', cursive;
 }
 
 /* ADVATTEGE конец *****************************************************************************************************************************************************/
@@ -272,25 +239,30 @@ p {
 
 /* SECTION-PADDING начало *****************************************************************************************************************************************************/
 
-.video {
-  width: 80%;
-  margin: 20px auto;
-  display: block;
-}
-
 .text {
   text-align: center;
   font-size: 12px;
+  font-family: 'Gabriela', serif;
+
   margin-top: 30px;
   margin-bottom: 20px;
+
   color: white;
+}
+
+.video {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .services {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+
+  align-items: center;
   text-align: center;
+
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 30px;
@@ -299,18 +271,22 @@ p {
 .service-col {
   max-width: 100%;
   width: 100%;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 30px;
 }
 
 .service {
-  padding: 25px;
+
   border: 1px solid #ececec;
   border-radius: 6px;
+
+  padding: 25px;
+  margin-bottom: 30px;
+
   background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-  margin-bottom: 30px;
 }
 
 .services img {
@@ -319,29 +295,43 @@ p {
 
 .service h4 {
   font-weight: 400;
-  margin-bottom: 12px;
   text-transform: uppercase;
+  font-family: 'Gabriela', serif;
+
+  margin-bottom: 12px;
 }
 
 .service p {
-  margin: 0 auto 30px auto;
   font-size: 13px;
   line-height: 1.7;
   text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  line-height: 170%;
+  height: 140px;
+
+  margin: 0 auto 30px auto;
+}
+
+.service p::first-letter {
+  font-size: 1.7rem;
+  font-family: 'Pattaya', sans-serif;
+  color: rgb(255, 168, 7);
 }
 
 .btn {
-  padding: 10px 20px;
-  background-color: rgb(226, 153, 17);
-  border-radius: 10px;
+  display: inline-flex;
+  font-family: 'Gabriela', serif;
   text-transform: uppercase;
   font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(226, 153, 17);
 }
 
 .btn:hover {
-  transform: scale(1.1);
-  background-color: rgb(146, 103, 24);
+  transform: scale(1.1) !important;
   transition: all 0.25s;
+  background-color: rgb(146, 103, 24);
 }
 
 /* SECTION-PADDING конец ******************************************************************************************************************************************************/
@@ -349,22 +339,19 @@ p {
 
 /* SLIDER начало *******************************************************************************************************************************************************/
 
+.slider-container {
+  max-width: 1280px;
+  position: relative;
+  margin: auto;
+}
+
 .showSlide img {
   width: 100%;
   height: 70vh;
   overflow: hidden;
   object-fit: cover;
-  margin-bottom: 20px;
   border-radius: 40px;
-  /* border-style: groove; */
-  /* border-color: rgb(241, 121, 9); */
-
-}
-
-.slider-container {
-  max-width: 1280px;
-  position: relative;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
 .left,
@@ -373,13 +360,16 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(255, 139, 6);
+
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+
+  padding: 16px;
+  margin-top: -22px;
+
+  color: rgb(255, 139, 6);
 }
 
 .right {
@@ -436,26 +426,31 @@ p {
 }
 
 .section-information h3 {
-  color: #341d4a;
   margin-bottom: 1rem;
+  color: #341d4a;
 }
 
 .section-information p {
   text-indent: 2rem;
   font-size: 12px;
-  padding-bottom: 20px;
   text-align: justify;
+  font-family: 'Montserrat Alternates', sans-serif;
+  line-height: 200%;
+  padding-bottom: 20px;
+
 }
 
 .section-information p::first-letter {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-family: 'Pattaya', sans-serif;
+  color: rgb(255, 170, 11);
 }
 
 .section-information img {
-  margin: auto;
-  margin-top: 10px;
   width: 100%;
   border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 /* INFORMATION конец ***************************************************************************************************************************************************/
@@ -515,17 +510,16 @@ span {
     font-size: 14px;
   }
 
+  .section-padding p {
+    font-size: 14px;
+  }
+
   .section-advantage .txt {
     font-size: 11px;
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  .section-padding p {
-    font-size: 14px;
-  }
 }
-
 
 @media (max-width: 768px) {
 
@@ -560,26 +554,26 @@ span {
   }
 
   h1 {
-    margin-top: 30px;
     font-size: 25px;
-  }
-
-  .section-padding h2 {
-    font-size: 20px;
+    margin-top: 30px;
   }
 
   .tagline {
     font-size: 15px;
   }
-}
 
-.advantage-col {
-  width: 100%;
-  height: 250px;
-}
+  .advantage-col {
+    width: 100%;
+    height: 250px;
+  }
 
-.advantage img {
-  width: 50px;
+  .advantage img {
+    width: 50px;
+  }
+
+  .section-padding h2 {
+    font-size: 20px;
+  }
 }
 
 .service {
@@ -588,17 +582,11 @@ span {
 }
 
 .service p {
-  font-size: 18px;
+  height: auto;
+  font-size: 16px;
 }
 
-
 @media (min-width: 768px) and (max-width:992px) {
-
-  .service-col {
-    max-width: calc(100% / 3);
-    width: 100%;
-    margin-bottom: 0;
-  }
 
   .main-menu li a {
     font-size: 12px;
@@ -634,26 +622,6 @@ span {
     font-size: 14px;
   }
 
-  .section-advantage .txt {
-    font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .section-padding p {
-    font-size: 16px;
-    margin-top: 0;
-  }
-
-  .service {
-    width: 100%;
-
-  }
-
-  .service p {
-    font-size: 14px;
-  }
-
   .video {
     width: 30%;
     display: inline-block;
@@ -664,10 +632,37 @@ span {
     margin-left: 15px;
   }
 
+  .section-advantage .txt {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .service-col {
+    max-width: calc(100% / 3);
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .section-padding p {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service p {
+    font-size: 14px;
+    text-align: center;
+    height: 140px;
+    margin: 0;
+  }
+
   .section-information p {
     font-size: 14px;
   }
-
 }
 
 @media (min-width:992px) {
@@ -693,12 +688,6 @@ span {
     font-size: 23px;
   }
 
-  .service-col {
-    max-width: calc(100% / 3);
-    width: 100%;
-    margin-bottom: 0;
-  }
-
   .advantage-col {
     width: 33.3%;
     height: 330px;
@@ -718,9 +707,21 @@ span {
 
   .section-advantage .txt {
     font-size: 14px;
+    text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-    text-align: center;
+  }
+
+  .video {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 10px;
+  }
+
+  .service-col {
+    max-width: calc(100% / 3);
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .section-padding p {
@@ -732,13 +733,9 @@ span {
   }
 
   .service p {
-    font-size: 18px;
-  }
-
-  .video {
-    width: 30%;
-    display: inline-block;
-    margin: 20px 10px;
+    height: 140px;
+    font-size: 17px;
+    margin: 0;
   }
 
   .videoOne {
@@ -752,5 +749,4 @@ span {
   .section-information p {
     font-size: 16px;
   }
-
 }
