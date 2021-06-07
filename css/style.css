@@ -196,6 +196,7 @@ img {
 
 .section-advantage h2 {
   font-size: 22px;
+  margin-top: 30px;
 }
 
 .advantage-col {
@@ -241,13 +242,13 @@ img {
 
 .text {
   text-align: center;
-  font-size: 12px;
+  font-size: 28px;
   font-family: 'Gabriela', serif;
 
   margin-top: 30px;
   margin-bottom: 20px;
 
-  color: white;
+  color: rgb(216, 139, 25);
 }
 
 .video {
@@ -500,7 +501,31 @@ span {
 
 /* MEDYA начало ********************************************************************************************************************************************************/
 
+@media (max-width: 576px) {
+
+  .advantage {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  .advantage-col {
+    margin-top: 20px;
+  }
+
+  .advantage p {
+    font-size: 13px;
+  }
+
+  .section-advantage .txt {
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+}
+
+
 @media (min-width: 576px) and (max-width:768px) {
+
 
   .section-advantage h2 {
     font-size: 28px;
